@@ -14,7 +14,7 @@ int main()
     //建立数据库
 
     FILE* p=fopen("date.xml",'r');
-    char* buff[BUFFSIZE];
+    char buff[BUFFSIZE];
     memset(buff,0,BUFFSIZE);
     while(fgets(buff,BUFFSIZE,p)){
         int num=0;
