@@ -1,0 +1,25 @@
+#ifndef _TEST_H
+#define _TEST_H
+
+#include<stdio.h>
+#include<string.h>
+
+#define MOR_TIME "08:30"
+#define NIG_TIME "18:00"
+#define SIZE 100
+
+struct msg{
+    int up;
+    int id;
+    char name[10];
+    char type[10];
+    char check_in[10];
+    char check_out[10];
+    char work_time[10];
+};
+
+void PrintEmployAll(struct msg* employ,int size);
+void UpgradeMsg(struct msg* employee,int employeeID,char* checktime);
+void PrintEmploy(struct msg* employee,int employeeID);
+
+#endif
